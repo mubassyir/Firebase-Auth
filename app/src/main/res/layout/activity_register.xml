@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#008577"
     android:orientation="vertical"
-    tools:context=".RegisterActivity"
+    tools:context=".ui.RegisterActivity"
     android:scrollbarAlwaysDrawVerticalTrack="true">
 
     <RelativeLayout
@@ -104,7 +104,7 @@
 
         </RelativeLayout>
 
-        <ImageButton
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/user_profile_photo"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -113,7 +113,7 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/user_profile_image_background"
             android:elevation="4dp"
-            android:src="@drawable/ic_boy"/>
+            android:src="@drawable/default_image"/>
 
     </RelativeLayout>
 

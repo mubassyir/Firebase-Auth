@@ -1,4 +1,4 @@
-package com.mubassyir.firebasetutorial
+package com.mubassyir.firebasetutorial.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,8 +6,10 @@ import android.os.Bundle
 import android.util.Patterns
 import android.view.View
 import com.google.firebase.auth.FirebaseAuth
+import com.mubassyir.firebasetutorial.R
+import com.mubassyir.firebasetutorial.utils.login
+import com.mubassyir.firebasetutorial.utils.snackbar
 import kotlinx.android.synthetic.main.activity_register.*
-import java.util.regex.Pattern
 
 class RegisterActivity : AppCompatActivity() {
 

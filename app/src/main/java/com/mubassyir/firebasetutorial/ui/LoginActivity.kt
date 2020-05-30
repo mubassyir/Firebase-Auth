@@ -1,4 +1,4 @@
-package com.mubassyir.firebasetutorial
+package com.mubassyir.firebasetutorial.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,10 @@ import android.os.Bundle
 import android.util.Patterns
 import android.view.View
 import com.google.firebase.auth.FirebaseAuth
+import com.mubassyir.firebasetutorial.R
+import com.mubassyir.firebasetutorial.utils.login
+import com.mubassyir.firebasetutorial.utils.snackbar
+import com.mubassyir.firebasetutorial.utils.toast
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_login.edit_text_password
 
@@ -47,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         text_view_register.setOnClickListener{
-            Intent(this,RegisterActivity::class.java).also {
+            Intent(this, RegisterActivity::class.java).also {
                 startActivity(it)
             }
         }
