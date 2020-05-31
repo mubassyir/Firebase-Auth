@@ -1,10 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragments.HomeFragment">
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        tool:layout_constraintTop_toTopOf="parent"
+        tool:layout_constraintStart_toStartOf="parent"
+        tool:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/default_image"/>
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Welcomeback"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        tool:layout_constraintTop_toBottomOf="@id/profilePicture"
+        tool:layout_constraintStart_toStartOf="parent"
+        tool:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/displayName"
+        tools:text="email"
+        android:layout_toEndOf="@id/displayName"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:paddingTop="15dp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        tool:layout_constraintTop_toBottomOf="@id/welcome"
+        tool:layout_constraintEnd_toEndOf="parent"
+        tool:layout_constraintStart_toStartOf="parent"/>
 
 
-</RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
