@@ -77,12 +77,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
-
             <TextView
                 android:id="@+id/text_phone"
-                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="20sp"
                 android:layout_gravity="top"
                 android:drawablePadding="16dp"
+                android:layout_marginTop="10dp"
                 android:drawableStart="@drawable/ic_phone"
                 tools:text="+628123456"
                 android:enabled="true"
@@ -92,8 +92,8 @@
 
             <TextView
                 android:id="@+id/text_password"
-                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:layout_gravity="top"
+                android:textSize="20sp"
                 android:drawablePadding="16dp"
                 android:drawableLeft="@drawable/ic_lock"
                 android:text="Change Password"
